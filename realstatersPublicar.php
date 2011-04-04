@@ -27,13 +27,13 @@ class RealstatersPublicar {
     * representa el API cliente
     * @access protected
     */
-	protected $realstaters;
+    protected $realstaters;
 	
-	/**
+    /**
     * Opciones permitidas por cada tipo de anuncios
     * @var array
     */
-	public static $PROPIEDADES = array(
+    public static $PROPIEDADES = array(
 		#Venta
 		'venta' => array(
 			'apartaestudio' => 'apartaestudio', 'apartamento' => 'apartamento', 'bodega' => 'bodega', 'casacampestre' => 'casa', 'casa' => 'casa', 'condominio_unidadresidencial' => 'condominio_unidadresidencial', 'edificio' => 'edificio', 'finca' => 'finca', 'franquicia' => 'franquicia', 'localcomercial' => 'localcomercial', 'primalocalcomercial' => 'localcomercial', 'lote' => 'lote', 'lotefunebre' => 'lotefunebre', 'oficina' => 'localcomercial', 'consultorio' => 'localcomercial', 'primaconsultorio' => 'localcomercial', 'primaoficina' => 'localcomercial',	'parcelacion' => 'parcelacion', 'parqueadero_garaje' => 'parqueadero_garaje',
@@ -52,7 +52,7 @@ class RealstatersPublicar {
 		)
 	);
 	
-	/**
+    /**
     * Opciones permitidas por Apartaestudio
     * @var array 
     */
@@ -73,11 +73,11 @@ class RealstatersPublicar {
 		'urlImagenes' => null 
 	);
 	
-	/**
+    /**
     * Opciones permitidas por Apartamento
     * @var array 
     */
-	public static $OPCIONES_APARTAMENTO = array (
+    public static $OPCIONES_APARTAMENTO = array (
 		#Obligatorios
 		'id' => null, 'estrato' => null, 'departamento' => null, 'ciudad' => null, 'barrio' => null, 'precio' => null, 'estadoActual' => null, 'titulo' => null, 'descripcion' => null, 'penthouse' => null,
 		#Opcionales
@@ -92,13 +92,13 @@ class RealstatersPublicar {
 		'amobladoPropiedad' => null,
 		#Maximo 5 Imagenes
 		'urlImagenes' => null 
-	);
+    );
 	
-	/**
+    /**
     * Opciones permitidas por Bodega
     * @var array 
     */
-	public static $OPCIONES_BODEGA = array (
+    public static $OPCIONES_BODEGA = array (
 		#Obligatorios
 		'id' => null, 'estrato' => null, 'departamento' => null, 'ciudad' => null, 'barrio' => null, 'precio' => null, 'estadoActual' => null, 'titulo' => null, 'descripcion' => null,
 		#Opcionales
@@ -107,13 +107,13 @@ class RealstatersPublicar {
 		'otrasDimensiones' => null,
 		#Maximo 5 Imagenes
 		'urlImagenes' => null 
-	);
+    );
 	
-	/**
+    /**
     * Opciones permitidas por Casa, Casa Campestre, Hotel, Hostal, Hospedaje
     * @var array 
     */
-	public static $OPCIONES_CASA = array (
+    public static $OPCIONES_CASA = array (
 		#Obligatorios
 		'id' => null, 'estrato' => null, 'departamento' => null, 'ciudad' => null, 'barrio' => null, 'precio' => null, 'estadoActual' => null, 'titulo' => null, 'descripcion' => null, 
 		#Opcionales
@@ -128,39 +128,39 @@ class RealstatersPublicar {
 		'amobladoPropiedad' => null,
 		#Maximo 5 Imagenes
 		'urlImagenes' => null 
-	);
+    );
 	
-	/**
+    /**
     * Opciones permitidas por Condominio o Unidad Residencial
     * @var array 
     */
-	public static $OPCIONES_CONDOMINIO_UNIDADRESIDENCIAL = array (
+    public static $OPCIONES_CONDOMINIO_UNIDADRESIDENCIAL = array (
 		#Obligatorios
 		'id' => null, 'estrato' => null, 'departamento' => null, 'ciudad' => null, 'barrio' => null, 'precio' => null, 'estadoActual' => null, 'titulo' => null, 'descripcion' => null,
 		#Opcionales
 		'direccion' => null, 'numeroResidencias' => null,'areaTotal' => null, 'areaPorResidencia' => null,'negociable' => null, 'comentarios' => null, 'mesesConstruida' => null, 'anosConstruida' => null, 'depositoAdelanto' => null, 'latitudMapa' => null, 'longitudMapa' => null, 'zoomMapa' => null,
 		#Maximo 5 Imagenes
 		'urlImagenes' => null
-	);
+    );
 	
-	/**
+    /**
     * Opciones permitidas por Edificio
     * @var array 
     */
-	public static $OPCIONES_EDIFICIO = array (
+    public static $OPCIONES_EDIFICIO = array (
 		#Obligatorios
 		'id' => null, 'estrato' => null, 'departamento' => null, 'ciudad' => null, 'barrio' => null, 'precio' => null, 'estadoActual' => null, 'titulo' => null, 'descripcion' => null,
 		#Opcionales
 		'direccion' => null, 'numeroApartamentos' => null,'areaTotal' => null, 'areaPorApartamento' => null,'negociable' => null, 'comentarios' => null, 'mesesConstruida' => null, 'anosConstruida' => null, 'depositoAdelanto' => null, 'latitudMapa' => null, 'longitudMapa' => null, 'zoomMapa' => null,
 		#Maximo 5 Imagenes
 		'urlImagenes' => null
-	);
+    );
 	
-	/**
+    /**
     * Opciones permitidas por Finca
     * @var array 
     */
-	public static $OPCIONES_FINCA = array (
+    public static $OPCIONES_FINCA = array (
 		#Obligatorios
 		'id' => null, 'departamento' => null, 'ciudad' => null, 'precio' => null, 'estadoActual' => null, 'titulo' => null, 'descripcion' => null, 
 		#Opcionales
@@ -175,61 +175,61 @@ class RealstatersPublicar {
 		'amobladoPropiedad' => null,
 		#Maximo 5 Imagenes
 		'urlImagenes' => null 
-	);
+    );
 	
-	/**
+    /**
     * Opciones permitidas por Franquicia
     * @var array 
     */
-	public static $OPCIONES_FRANQUICIA = array (
+    public static $OPCIONES_FRANQUICIA = array (
 		#Obligatorios
 		'id' => null, 'departamento' => null, 'ciudad' => null, 'barrio' => null, 'precio' => null, 'estadoActual' => null, 'titulo' => null, 'descripcion' => null,
 		#Opcionales
 		'productoOServicio' => null, 'direccion' => null, 'negociable' => null, 'comentarios' => null, 'mesesConstruida' => null, 'anosConstruida' => null, 'depositoAdelanto' => null, 'latitudMapa' => null, 'longitudMapa' => null, 'zoomMapa' => null,
 		#Maximo 5 Imagenes
 		'urlImagenes' => null
-	);
+    );
 	
-	/**
+    /**
     * Opciones permitidas por Local Comercial, Prima Local Comercial, Oficina, Consultorio, Prima de Consultorio, Prima de Oficina
     * @var array 
     */
-	public static $OPCIONES_LOCALCOMERCIAL = array (
+    public static $OPCIONES_LOCALCOMERCIAL = array (
 		#Obligatorios
 		'id' => null, 'estrato' => null, 'departamento' => null, 'ciudad' => null, 'barrio' => null, 'precio' => null, 'estadoActual' => null, 'titulo' => null, 'descripcion' => null, 
 		#Opcionales
 		'direccion' => null, 'areaTotal' => null, 'nombreCentroComercial' => null, 'negociable' => null, 'pisos' => null, 'banos' => null, 'parqueaderosPrivados' => null, 'comentarios' => null, 'mesesConstruida' => null, 'anosConstruida' => null, 'depositoAdelanto' => null, 'latitudMapa' => null, 'longitudMapa' => null, 'zoomMapa' => null, 
 		#Maximo 5 Imagenes
 		'urlImagenes' => null 
-	);
+    );
 	
-	/**
+    /**
     * Opciones permitidas por Lote
     * @var array 
     */
-	public static $OPCIONES_LOTE = array (
+    public static $OPCIONES_LOTE = array (
 		#Obligatorios
 		'id' => null, 'estrato' => null, 'departamento' => null, 'ciudad' => null, 'barrio' => null, 'precio' => null, 'estadoActual' => null, 'titulo' => null, 'descripcion' => null, 
 		#Opcionales
 		'direccion' => null, 'areaTotal' => null, 'negociable' => null, 'comentarios' => null, 'mesesConstruida' => null, 'anosConstruida' => null, 'depositoAdelanto' => null, 'latitudMapa' => null, 'longitudMapa' => null, 'zoomMapa' => null, 
 		#Maximo 5 Imagenes
 		'urlImagenes' => null 
-	);
+    );
 	
-	/**
+    /**
     * Opciones permitidas por Lote Funebre
     * @var array 
     */
-	public static $OPCIONES_LOTEFUNEBRE = array (
+    public static $OPCIONES_LOTEFUNEBRE = array (
 		#Obligatorios
 		'id' => null, 'departamento' => null, 'ciudad' => null, 'precio' => null, 'titulo' => null, 'descripcion' => null,
 		#Opcionales
 		'estrato' => null, 'nombreCementerio' => null, 'negociable' => null,  'comentarios' => null, 'mesesConstruida' => null, 'anosConstruida' => null, 'depositoAdelanto' => null, 'latitudMapa' => null, 'longitudMapa' => null, 'zoomMapa' => null,
 		#Maximo 5 Imagenes
 		'urlImagenes' => null
-	);
+    );
 	
-	/**
+    /**
     * Opciones permitidas por Parcelacion
     * @var array 
     */
@@ -240,23 +240,23 @@ class RealstatersPublicar {
 		'direccion' => null, 'areaTotal' => null, 'areaConstruida' => null, 'numerodeLotes' => null,'negociable' => null, 'comentarios' => null, 'mesesConstruida' => null, 'anosConstruida' => null, 'depositoAdelanto' => null, 'latitudMapa' => null, 'longitudMapa' => null, 'zoomMapa' => null, 
 		#Maximo 5 Imagenes
 		'urlImagenes' => null 
-	);
+    );
 	
-	/**
+    /**
     * Opciones permitidas por Parqueadero o Garaje
     * @var array 
     */
-	public static $OPCIONES_PARQUEADERO_GARAJE = array (
+    public static $OPCIONES_PARQUEADERO_GARAJE = array (
 		#Obligatorios
 		'id' => null, 'departamento' => null, 'ciudad' => null, 'barrio' => null, 'precio' => null, 'estadoActual' => null, 'titulo' => null, 'descripcion' => null, 
 		#Opcionales
 		'direccion' => null, 'areaTotal' => null, 'numerodeParquederosGarajes' => null,'negociable' => null, 'comentarios' => null, 'mesesConstruida' => null, 'anosConstruida' => null, 'depositoAdelanto' => null, 'latitudMapa' => null, 'longitudMapa' => null, 'zoomMapa' => null, 
 		#Maximo 5 Imagenes
 		'urlImagenes' => null 
-	);
+    );
 	
-	/**
-	  * Inicializa el API Realstaters
+    /**
+      * Inicializa el API Realstaters
       *
       * Configuracion:
       * - apiKey: the API Key ID
