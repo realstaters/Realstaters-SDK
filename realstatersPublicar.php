@@ -23,7 +23,7 @@
  */
 require 'realstaters.php';
 class RealstatersPublicar {
-	/**
+    /**
     * representa el API cliente
     * @access protected
     */
@@ -63,9 +63,9 @@ class RealstatersPublicar {
 		'direccion' => null, 'areaHabitacion' => null, 'areaTotal' => null, 'negociable' => null, 'pisos' => null, 'banos' => null, 'habitaciones' => null, 'parqueaderosPrivados' => null, 'lineasTelefonicas' => null, 'comentarios' => null, 'mesesConstruida' => null, 'anosConstruida' => null, 'depositoAdelanto' => null, 'habitacionesDisponibles' => null, 'latitudMapa' => null, 'longitudMapa' => null, 'zoomMapa' => null,
 		#dias, semana, quincena, mes
 		'cobroAlquiler' => null,
-		#Max 1 Año
+		#Max 1 AÃ±o
 		'tiempoMinEstadia' => null,
-		#Max 2 Año
+		#Max 2 AÃ±o
 		'tiempoMaxEstadia' => null,
 		#total, parcial, no
 		'amobladoPropiedad' => null,
@@ -84,9 +84,9 @@ class RealstatersPublicar {
 		'direccion' => null, 'areaHabitacion' => null, 'areaTotal' => null, 'negociable' => null, 'pisos' => null, 'banos' => null, 'habitaciones' => null, 'parqueaderosPrivados' => null, 'lineasTelefonicas' => null, 'comentarios' => null, 'mesesConstruida' => null, 'anosConstruida' => null, 'depositoAdelanto' => null, 'habitacionesDisponibles' => null, 'latitudMapa' => null, 'longitudMapa' => null, 'zoomMapa' => null, 
 		#dias, semana, quincena, mes
 		'cobroAlquiler' => null,
-		#Max 1 Año
+		#Max 1 AÃ±o
 		'tiempoMinEstadia' => null,
-		#Max 2 Año
+		#Max 2 AÃ±o
 		'tiempoMaxEstadia' => null,
 		#total, parcial, no
 		'amobladoPropiedad' => null,
@@ -120,9 +120,9 @@ class RealstatersPublicar {
 		'direccion' => null, 'areaHabitacion' => null, 'areaTotal' => null, 'areaConstruida' => null, 'negociable' => null, 'pisos' => null, 'banos' => null, 'habitaciones' => null, 'parqueaderosPrivados' => null, 'lineasTelefonicas' => null, 'comentarios' => null, 'mesesConstruida' => null, 'anosConstruida' => null, 'depositoAdelanto' => null, 'habitacionesDisponibles' => null, 'latitudMapa' => null, 'longitudMapa' => null, 'zoomMapa' => null, 
 		#dias, semana, quincena, mes
 		'cobroAlquiler' => null,
-		#Max 1 Año
+		#Max 1 AÃ±o
 		'tiempoMinEstadia' => null,
-		#Max 2 Año
+		#Max 2 AÃ±o
 		'tiempoMaxEstadia' => null,
 		#total, parcial, no
 		'amobladoPropiedad' => null,
@@ -167,9 +167,9 @@ class RealstatersPublicar {
 		'direccion' => null, 'areaHabitacion' => null, 'areaTotal' => null, 'areaConstruida' => null, 'negociable' => null, 'pisos' => null, 'banos' => null, 'habitaciones' => null, 'parqueaderosPrivados' => null, 'lineasTelefonicas' => null, 'comentarios' => null, 'mesesConstruida' => null, 'anosConstruida' => null, 'depositoAdelanto' => null, 'habitacionesDisponibles' => null, 'latitudMapa' => null, 'longitudMapa' => null, 'zoomMapa' => null, 
 		#dias, semana, quincena, mes
 		'cobroAlquiler' => null,
-		#Max 1 Año
+		#Max 1 AÃ±o
 		'tiempoMinEstadia' => null,
-		#Max 2 Año
+		#Max 2 AÃ±o
 		'tiempoMaxEstadia' => null,
 		#total, parcial, no
 		'amobladoPropiedad' => null,
